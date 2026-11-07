@@ -1,0 +1,14 @@
+{
+    "SUP001": {
+        "name": "ABC Trading",
+        "quality": 90.0,
+        "delivery": 85.0,
+        "price": 80.0
+    },
+    "SUP002": {
+        "name": "XYZ Industrial",
+        "quality": 95.0,
+        "delivery": 92.0,
+        "price": 88.0
+    }
+}
