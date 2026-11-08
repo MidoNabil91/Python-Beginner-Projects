@@ -41,6 +41,7 @@ Supports multiplication (*)
 Supports division (/)
 Supports modulus (%)
 Supports power (**)
+Built using Python functions and return statements
 Handles division by zero
 Allows continuous calculations using previous results
 Allows the user to start a new calculation or quit

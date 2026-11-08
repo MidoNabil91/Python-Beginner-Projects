@@ -9,6 +9,24 @@ print("=" * 50)
 print("🧮 Calculator Project")
 print("=" * 50)
 
+def add (num1,num2):
+    return num1+num2
+
+def subtract (num1,num2):
+    return num1-num2
+
+def multiply (num1,num2):
+    return num1*num2
+
+def division (num1,num2):
+    return num1/num2
+
+def modulo (num1,num2):
+    return num1%num2
+
+def power (num1,num2):
+    return num1**num2
+
 while True:
     num1 = float(input("Enter first Number = "))
     
@@ -17,23 +35,23 @@ while True:
         num2 = float(input("Enter next Number = "))
 
         if process == "+":
-            total = num1 + num2
+            total = add ( num1 , num2)
         elif process == "-":
-            total = num1 - num2
+            total = subtract (num1 , num2)
         elif process == "*":
-            total = num1 * num2
+            total = multiply (num1 , num2)
         elif process == "/":
             if num2 == 0:
                 print("❌ Error: Division by zero is not allowed.")
                 continue
-            total = num1 / num2
+            total = division (num1,num2)
         elif process == "%":
             if num2 == 0:
                 print("❌ Error: Modulo by zero is not allowed.")
                 continue
-            total = num1 % num2
+            total = modulo (num1 , num2)
         elif process == "**":
-            total = num1 ** num2
+            total = power (num1 , num2)
         else:
             print("❌ Invalid operation! Please try again.")
             continue
