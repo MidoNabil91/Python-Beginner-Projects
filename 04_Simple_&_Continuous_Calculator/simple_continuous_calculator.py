@@ -51,4 +51,4 @@ while True:
             break  # Exiting the inner loop to start with a new number
         else:
             print("👋 Thanks for using Calculator!")
-            sys.exit()  # Terminate the entire program
+            sys.exit()  # Terminate the entire program    
