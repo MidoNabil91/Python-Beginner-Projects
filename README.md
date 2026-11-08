@@ -7,60 +7,65 @@ Projects
 
 1. Interactive Countdown Timer
 A simple countdown timer that:
-
-Takes a number from the user
-Counts down to zero
-Displays a completion message
-Allows the user to start another countdown
-Exits when requested
+* Takes a number from the user
+* Counts down to zero
+* Displays a completion message
+* Allows the user to start another countdown
+* Exits when requested
 
 2. Interactive Multiplication Table Generator
 A multiplication table generator that:
-
-Creates multiplication tables from 1 to 10
-Accepts multiple numbers without restarting the program
-Uses loops and user input
-Allows the user to exit by entering 0
+* Creates multiplication tables from 1 to 10
+* Accepts multiple numbers without restarting the program
+* Uses loops and user input
+* Allows the user to exit by entering 0
 
 3. Number Guessing Game
 A simple guessing game that:
-
-Generates a random number between 1 and 100
-Gives hints when the guess is too high or too low
-Tracks the number of attempts
-Limits the player to 10 attempts
-Allows the player to restart the game
-Displays a Game Over message when attempts run out
+* Generates a random number between 1 and 100
+* Gives hints when the guess is too high or too low
+* Tracks the number of attempts
+* Limits the player to 10 attempts
+* Allows the player to restart the game
+* Displays a Game Over message when attempts run out
 
 4. Simple & Continuous Calculator
 A calculator project that:
+* Supports addition (+)
+* Supports subtraction (-)
+* Supports multiplication (*)
+* Supports division (/)
+* Supports modulus (%)
+* Supports power (**)
+* Built using Python functions and return statements
+* Handles division by zero
+* Allows continuous calculations using previous results
+* Allows the user to start a new calculation or quit
 
-Supports addition (+)
-Supports subtraction (-)
-Supports multiplication (*)
-Supports division (/)
-Supports modulus (%)
-Supports power (**)
-Built using Python functions and return statements
-Handles division by zero
-Allows continuous calculations using previous results
-Allows the user to start a new calculation or quit
+5. Supplier Evaluation System
+A practical procurement-focused application that:
+* Evaluates supplier performance using weighted scoring (Quality: 40%, Delivery: 30%, Price: 30%)
+* Calculates total weighted average score dynamically
+* Automatically assigns Supplier Status (Approved, Conditional, Rejected)
+* Assesses Supplier Risk Level (Low Risk, Medium Risk, High Risk)
+* Features modular Python functions for clean code architecture
+* Formats output into a clean, professional summary report
+* Implements continuous evaluation loops to evaluate multiple suppliers
+
 Concepts Practiced
 Through these projects I practiced:
+* Variables & Data Types
+* User Input Handling & String Sanitization (`strip()`, `lower()`)
+* Print Formatting & F-strings
+* Modular Code with Functions & `return` Statements
+* Weighted Average & Mathematical Calculations
+* Random Module
+* Control Flow (`if` / `elif` / `else`)
+* `while` Loops & Nested Loops
+* `break` & `continue` Statements
+* Program Flow Control & Exit Handling (`sys.exit()`)
+* Basic Error Handling & Input Validation
 
-Variables
-User Input
-Print Statements
-Random Module
-if / elif / else
-for loops
-while loops
-Nested loops
-break statements
-continue statements
-Basic debugging
-Program flow control
-Error handling
 Why This Repository?
 I am currently learning Python step by step.
 
@@ -69,16 +74,13 @@ Instead of only studying theory, I am building small projects to strengthen my u
 More projects will be added as I continue learning.
 
 Future Projects
-Login System
-Supplier Evaluation System
-Inventory Tracker
-Procurement Mini Projects
-File-Based Supplier Management System
-Data Analysis Projects
+* Login System
+* Inventory Tracker
+* Procurement Mini Projects
+* File-Based Supplier Management System
+* Data Analysis Projects
 
 Author
 Mohamed Nabil
-
 Procurement Professional | Python Learner
-
 Learning Python one step at a time 🚀
