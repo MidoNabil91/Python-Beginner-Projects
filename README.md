@@ -5,6 +5,9 @@ This repository contains small projects that help me practice programming logic,
 
 Projects
 
+0. Debugging & Code Review Exercises
+A dedicated file (debugging_exercises.py) containing 6 practical debugging challenges covering logic fixes, while-else control flow, function return values, scope management, and early loop termination fixes.
+
 1. Interactive Countdown Timer
 A simple countdown timer that:
 * Takes a number from the user
