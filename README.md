@@ -93,3 +93,6 @@ Author
 Mohamed Nabil
 Procurement Professional | Python Learner
 Learning Python one step at a time 🚀
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](www.linkedin.com/in/mohamed-abdeldayem-b80174a5)
+[![GitHub](https://img.shields.io/badge/GitHub-MidoNabil91-181717?style=flat&logo=github)](https://github.com/MidoNabil91)
