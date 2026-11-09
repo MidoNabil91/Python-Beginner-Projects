@@ -15,6 +15,8 @@ A dedicated series of debugging challenges focused on inspecting buggy code, ide
   * Practical debugging challenges covering loop counters, infinite loop prevention, `while-else` control flows, `if-elif` conditional hierarchy order, scope initialization (`NameError`), arithmetic operator precedence, and missing `return` statements (`TypeError`).
 * **Set 2 (`debugging_exercises_03.py`):** 
   * 5 advanced functional challenges inspired by procurement & inventory logic—covering boundary conditions (`<=` vs `<`), pure functions vs scope modification, strict boolean evaluation (`and` vs `or`), default parameter ordering (`SyntaxError`), and defensive checks against division by zero (`ZeroDivisionError`).
+* **Set 3 (`debugging_exercises_04.py`):** 
+  * Practical debugging & refactoring challenges covering logical operator selection (`and` vs `or`), variable scope/naming typos (`NameError`), defensive validation against `ZeroDivisionError`, and standard return-value modular structures.
 
 ### 1. Interactive Countdown Timer
 A simple countdown timer that:
@@ -82,6 +84,7 @@ Through these projects I practiced:
 * Iteration Controls (`while` Loops, `for` Loops, `break`, `continue`)
 * Defensive Programming, Stock Boundary Validation, & Capacity Limits
 * Audit Log Trail Management using String Accumulation (`+=`)
+* Defensive Exception Handling & Zero-Division Risk Prevention
 
 ---
 
@@ -106,3 +109,6 @@ I am currently learning Python step by step. Instead of only studying theory, I 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/mohamed-abdeldayem-b80174a5)
 [![GitHub](https://img.shields.io/badge/GitHub-MidoNabil91-181717?style=flat&logo=github)](https://github.com/MidoNabil91)
+
+---
+*Learning Python one step at a time 🚀*
