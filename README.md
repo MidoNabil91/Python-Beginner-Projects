@@ -58,13 +58,13 @@ A practical procurement-focused application that:
 * Formats output into a clean, professional summary report
 * Implements continuous evaluation loops to evaluate multiple suppliers
 
-### 6. Inventory Tracker Mini System 📦 (`inv_tracker_system.py`)
-A practical inventory control application using Python functions and loops that:
-* Tracks stock levels dynamically during user sessions
-* Features modular functions for stock transactions (`add_stock`, `remove_stock`, `check_stock`)
-* Implements defensive safety checks to prevent issuing more stock than available
-* Includes real-time Low Stock Warning alerts (`stock <= 5`)
-* Operates continuous menu loops for multi-action operations
+### 6. Inventory Tracker Mini System 📦 (`inv_tracker_system.py`) — v1.4
+A feature-rich inventory control application built with pure functions, menu-driven control flow, and supply chain logic:
+* **Stock Transactions:** Supports receiving (`+In`) and issuing (`-Out`) operations with defensive input validation against invalid inputs or negative numbers.
+* **Capacity Control & Reorder Alerts:** Enforces max warehouse capacity limits (`max_capacity = 500`) and issues automated Low Stock Warnings (`stock <= 5`).
+* **Financial Valuation:** Calculates real-time total inventory monetary valuation formatted explicitly in KWD (`:.3f`).
+* **Supply Chain KPIs:** Dynamically calculates Warehouse Occupancy Rate (`%`) and tracks cumulative Movement Metrics (`+Added` / `-Removed`).
+* **Audit Trail:** Features a continuous string-based session history log to audit all transactions within an active session.
 
 ---
 
@@ -73,13 +73,15 @@ A practical inventory control application using Python functions and loops that:
 Through these projects I practiced:
 * Variables & Primitive Data Types
 * User Input Handling & String Sanitization (`strip()`, `lower()`)
-* Print Formatting & F-strings
-* Modular Code with Pure Functions & `return` Statements
-* Weighted Average & Mathematical Calculations
+* Print Formatting, Decimal Precision Formatting (`:.3f`, `:.2f`), & F-strings
+* Modular Code Architecture with Pure Functions & `return` Statements
+* Weighted Average & Mathematical Calculation Logic
+* Dynamic KPI Calculations (Warehouse Occupancy Rate %, Valuation Reports)
 * Random Module & Logic Control
 * Control Flow (`if` / `elif` / `else`) & Logical Operators (`and`, `or`, `not`)
 * Iteration Controls (`while` Loops, `for` Loops, `break`, `continue`)
-* Defensive Logic & Stock Boundary Checkings
+* Defensive Programming, Stock Boundary Validation, & Capacity Limits
+* Audit Log Trail Management using String Accumulation (`+=`)
 
 ---
 
