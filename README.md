@@ -10,6 +10,9 @@ Projects
 * debugging_exercises_02.py
 - 5 additional debugging challenges focused on login systems, approval workflows, variable initialization, operator precedence, and inventory tracking logic.
 - Designed to strengthen code analysis and step-by-step problem-solving without relying on code execution.
+* debugging_exercises_03
+- 5 advanced functional challenges inspired by procurement & inventory logic—covering boundary conditions (`<=` vs `<`).
+- pure functions vs scope modification, strict boolean evaluation (`and` vs `or`), default parameter ordering (`SyntaxError`), and defensive checks against division by zero (`ZeroDivisionError`).
 
 1. Interactive Countdown Timer
 A simple countdown timer that:

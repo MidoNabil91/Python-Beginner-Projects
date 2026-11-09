@@ -7,12 +7,14 @@
 # ==================================================
 # """
 # ================================================
-# Challenge 1 - Login Attempts
-# Bug: The attempts variable never changes.
+# Challenge 1: Login Attempts Counter
+# Bug: Missing loop counter update causing infinite loop, and unconditional locked message outside the loop.
 # ================================================
+print("--- Challenge 1: Login Attempts ---")
+
+# Fixed Code:
 username = "admin"
 password = 1234
-
 attempts = 1
 
 while attempts <= 3:
@@ -22,137 +24,96 @@ while attempts <= 3:
     if user == username and pwd == password:
         print("Login Success")
         break
-
-    print("Wrong Credentials")
-
-print("Account Locked")
-
-# was missing, causing an infinite loop when incorrect credentials are entered.
-# Also, "Account Locked" should only appear after all attempts are used.
-
-# ====================================================
-# Challenge 1 - Login Attempts ### Correct Answer ###
-# ====================================================
-
-username = "admin"
-password = 1234
-
-attempts = 1
-
-while attempts <= 3:
-    user = input("Username: ")
-    pwd = int(input("Password: "))
-
-    if user == username and pwd == password:
-        print("Login Success")
-        break # break prevents the else block from running.
     else:
         print("Wrong Credentials")
 
-    attempts += 1 # Counters must be updated inside loops.
+    attempts += 1  # Increment counter to prevent infinite loop
+else:
+    print("Account Locked")  # Only runs if loop completes all 3 attempts naturally
 
-else: # while...else is useful when the loop finishes naturally.
-    print("Account Locked")
+print()
 # ================================================
-# Challenge 2 - Employee Bonus
-# Bug: When salary is less than or equal to 1000: bonus is never created.
-#           This causes: NameError
+# Challenge 2: Employee Bonus Calculation
+# Bug: Variable 'bonus' is only initialized inside the 'if' condition, causing NameError when salary <= 1000.
 # ================================================
+print("--- Challenge 2: Employee Bonus ---")
+
+# Fixed Code:
 salary = 500
+bonus = 0  # Initialize variable with default value to prevent NameError
 
 if salary > 1000:
     bonus = salary * 0.10
 
-print("Bonus:", bonus)
-# ================================================
-# Challenge 2 - Employee Bonus ### Correct Answer ###
-# ================================================
-salary = 500
-bonus = 0 # Variables should be initialized before use.
-
-if salary > 1000:
-    bonus = salary * 0.10
-
-print("Bonus:", bonus)
+print(f"Salary: ${salary} | Bonus: ${bonus}\n")
 #Always consider what happens when a condition is False.
+# # ================================================
+# Challenge 3: Procurement Approval Logic
+# Bug: Incorrect conditional hierarchy where
+# lower threshold (>= 5000) was checked
+# before higher threshold (>= 10000),
+# causing larger amounts to bypass Director Approval.
 # ================================================
-# Challenge 3 - Procurement Approval Logic
-# Bug: The approval hierarchy is incorrect.
-# Bug: A higher approval level should be checked first.
-# ================================================
-amount = 2500
+print("--- Challenge 3: Procurement Approval Logic ---")
 
-if amount >= 5000:
-    print("Manager Approval")
+# Fixed Code:
+amount = 12000
 
-elif amount >= 10000:
-    print("Director Approval")
-
-else:
-    print("Auto Approved")
-
-# ================================================
-# Challenge 3 - Procurement Approval Logic ## correct answer ##
-# ================================================
-amount = 2500
-
-if amount >= 10000:
-    print("Director Approval")
-
+if amount >= 10000:  # Highest threshold must be evaluated first
+    print("Approval Level Required: Director Approval")
 elif amount >= 5000:
-    print("Manager Approval")
-
+    print("Approval Level Required: Manager Approval")
 else:
-    print("Auto Approved")
+    print("Approval Level Required: Auto Approved")
+
+print()
+
 # Order matters in if and elif.
 # Business logic is just as important as syntax.
 # ================================================
-# Challenge 4 - Average Calculator
-# Bug: Operator precedence causes Python to calculate: 70 / 3
-# Bug: The result is not the true average.
+# Challenge 4: Average Calculator
+# Bug: Missing parentheses caused operator precedence issue,
+# calculating 'a + b + (c / 3)' instead of the true average.
 # ================================================
+print("--- Challenge 4: Average Calculator ---")
+
+# Fixed Code:
 def calculate_average(a, b, c):
-    average = a + b + c / 3
-    return average
+    return (a + b + c) / 3  # Parentheses enforce correct order of addition before division
 
 result = calculate_average(90, 80, 70)
-
-print(result)
-# ================================================
-# Challenge 4 - Average Calculator ## correct answer ##
-# ================================================
-def calculate_average(a, b, c):
-    return (a + b + c) / 3
-
-result = calculate_average(90, 80, 70)
-
-print(result)
+print(f"Calculated Average: {result}\n")
 # Always use parentheses when calculating averages: (a + b + c) / 3 not a + b + c / 3
 # ================================================
-# Challenge 5 - Inventory Counter
-# Bug: The loop prints: 11 time.
-# Bug: then Out Of Stock
+# Challenge 5: Inventory Counter
+# Bug: Boundary condition logic error using '>=' printed 'Current Stock: 0' before 'Out Of Stock', incorrectly stating stock was available when 0 remained.
 # ================================================
+print("--- Challenge 5: Inventory Counter ---")
+
+# Fixed Code:
 stock = 10
 
-while stock >= 0:
+while stock > 0:  # Loop stops strictly when stock reaches 0
     print("Current Stock:", stock)
     stock -= 1
 
-print("Out Of Stock")
-# ================================================
-# Challenge 5 - Inventory Counter ## correct answer ##
-# ================================================
-stock = 10
-
-while stock > 0:
-    print("Current Stock:", stock)
-    stock -= 1
-
-print("Out Of Stock")
-
+print("Out Of Stock!\n")
 # stops before zero.
 # Always understand the business requirement before changing the code.
+# ================================================
+# Challenge 6: Function Return Value
+# Bug: Missing 'return' statement inside the function, causing it to return 'None' by default and triggering a TypeError on addition.
+# ================================================
+print("--- Challenge 6: Calculate Total with Return ---")
+
+# Fixed Code:
+def calculate_total(price, qty):
+    return price * qty  # Added return statement to send the calculated value back
+
+result = calculate_total(100, 5)
+print(f"Total with Addition: ${result + 50}\n")
+
+
 
 # Key Takeaways
 # ✅ Variables must be initialized.
