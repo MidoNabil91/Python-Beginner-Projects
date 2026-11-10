@@ -68,23 +68,35 @@ A feature-rich inventory control application built with pure functions, menu-dri
 * **Supply Chain KPIs:** Dynamically calculates Warehouse Occupancy Rate (`%`) and tracks cumulative Movement Metrics (`+Added` / `-Removed`).
 * **Audit Trail:** Features a continuous string-based session history log to audit all transactions within an active session.
 
+### 7. Supplier List Manager 📦 (supplier_list_manager.py)
+
+A interactive CLI procurement tool designed to maintain and manage an active directory of approved suppliers:
+
+CRUD Management: Fully supports adding new suppliers, viewing directory summaries, searching existing vendors, and deleting obsolete suppliers.
+
+Duplicate Prevention: Protects the supplier directory against duplicate entries using membership checks (in operator).
+
+Defensive Exception Handling: Prevents application crashes from invalid user choices using try...except ValueError blocks.
+
+Formatted Output: Features dynamic index listing with range()/len(), text case normalization via .lower().strip() and presentation layer formatting with .title().
 ---
 
 ## 🧠 Concepts Practiced
 
 Through these projects I practiced:
-* Variables & Primitive Data Types
-* User Input Handling & String Sanitization (`strip()`, `lower()`)
-* Print Formatting, Decimal Precision Formatting (`:.3f`, `:.2f`), & F-strings
-* Modular Code Architecture with Pure Functions & `return` Statements
-* Weighted Average & Mathematical Calculation Logic
-* Dynamic KPI Calculations (Warehouse Occupancy Rate %, Valuation Reports)
-* Random Module & Logic Control
-* Control Flow (`if` / `elif` / `else`) & Logical Operators (`and`, `or`, `not`)
-* Iteration Controls (`while` Loops, `for` Loops, `break`, `continue`)
-* Defensive Programming, Stock Boundary Validation, & Capacity Limits
-* Audit Log Trail Management using String Accumulation (`+=`)
-* Defensive Exception Handling & Zero-Division Risk Prevention
+- Variables & Primitive Data Types
+- Python Lists & Dynamic Sequences (append(), remove(), len(), zip(), enumerate())
+- User Input Handling & String Sanitization (strip(), lower(), title())
+- Print Formatting, Decimal Precision Formatting (:.3f, :.2f), & F-strings
+- Modular Code Architecture with Pure Functions & return Statements
+- Weighted Average & Mathematical Calculation Logic
+- Dynamic KPI Calculations (Warehouse Occupancy Rate %, Valuation Reports)
+- Random Module & Logic Control
+- Control Flow (if / elif / else) & Logical Operators (and, or, not)
+- Iteration Controls (while Loops, for Loops, break, continue)
+- Defensive Programming, Stock Boundary Validation, & Duplicate Prevention
+- Audit Log Trail Management using String Accumulation (+=)
+- Defensive Exception Handling (try...except ValueError) & Zero-Division Risk Prevention.
 
 ---
 
