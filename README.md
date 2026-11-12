@@ -17,6 +17,8 @@ A dedicated series of debugging challenges focused on inspecting buggy code, ide
   * 5 advanced functional challenges inspired by procurement & inventory logic—covering boundary conditions (`<=` vs `<`), pure functions vs scope modification, strict boolean evaluation (`and` vs `or`), default parameter ordering (`SyntaxError`), and defensive checks against division by zero (`ZeroDivisionError`).
 * **Set 3 (`debugging_exercises_04.py`):** 
   * Practical debugging & refactoring challenges covering logical operator selection (`and` vs `or`), variable scope/naming typos (`NameError`), defensive validation against `ZeroDivisionError`, and standard return-value modular structures.
+* Set 4 (dictionaries_supply_chain_training.py):
+Practical dictionary exercises covering CRUD operations, nested dictionaries, data filtering, aggregation logic, inventory management, fleet tracking, supplier evaluation, and procurement-focused business scenarios.
 
 ### 1. Interactive Countdown Timer
 A simple countdown timer that:
