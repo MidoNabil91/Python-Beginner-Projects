@@ -19,6 +19,8 @@ A dedicated series of debugging challenges focused on inspecting buggy code, ide
   * Practical debugging & refactoring challenges covering logical operator selection (`and` vs `or`), variable scope/naming typos (`NameError`), defensive validation against `ZeroDivisionError`, and standard return-value modular structures.
 * Set 4 (dictionaries_supply_chain_training.py):
 Practical dictionary exercises covering CRUD operations, nested dictionaries, data filtering, aggregation logic, inventory management, fleet tracking, supplier evaluation, and procurement-focused business scenarios.
+* et 5 ( debugging_Supply Chain & Procurement Practice.py )
+A collection of 10 practical debugging exercises focused on identifying and fixing syntax, runtime (`KeyError`, `ValueError`, `AttributeError`), and logical bugs in supply chain and procurement scripts.
 
 ### 1. Interactive Countdown Timer
 A simple countdown timer that:
@@ -73,13 +75,9 @@ A feature-rich inventory control application built with pure functions, menu-dri
 ### 7. Supplier List Manager 📦 (supplier_list_manager.py)
 
 A interactive CLI procurement tool designed to maintain and manage an active directory of approved suppliers:
-
 CRUD Management: Fully supports adding new suppliers, viewing directory summaries, searching existing vendors, and deleting obsolete suppliers.
-
 Duplicate Prevention: Protects the supplier directory against duplicate entries using membership checks (in operator).
-
 Defensive Exception Handling: Prevents application crashes from invalid user choices using try...except ValueError blocks.
-
 Formatted Output: Features dynamic index listing with range()/len(), text case normalization via .lower().strip() and presentation layer formatting with .title().
 ---
 
