@@ -19,8 +19,10 @@ A dedicated series of debugging challenges focused on inspecting buggy code, ide
   * Practical debugging & refactoring challenges covering logical operator selection (`and` vs `or`), variable scope/naming typos (`NameError`), defensive validation against `ZeroDivisionError`, and standard return-value modular structures.
 * Set 4 (dictionaries_supply_chain_training.py):
 Practical dictionary exercises covering CRUD operations, nested dictionaries, data filtering, aggregation logic, inventory management, fleet tracking, supplier evaluation, and procurement-focused business scenarios.
-* et 5 ( debugging_Supply Chain & Procurement Practice.py )
+* Set 5 ( debugging_Supply Chain & Procurement Practice.py )
 A collection of 10 practical debugging exercises focused on identifying and fixing syntax, runtime (`KeyError`, `ValueError`, `AttributeError`), and logical bugs in supply chain and procurement scripts.
+* Set 6 (dictionary_business_scenarios.py)
+Focused on business logic, RFQ evaluation, inventory management, fleet tracking, and supplier assessment using Python.
 
 ### 1. Interactive Countdown Timer
 A simple countdown timer that:
