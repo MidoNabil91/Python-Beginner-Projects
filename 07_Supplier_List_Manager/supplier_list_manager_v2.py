@@ -2,7 +2,7 @@
 # Project 7: Supplier List Manager v2.0
 # Description: A CLI tool to add, view, search, update, and remove suppliers.
 # Built with: Python (Dictionaries, Functions, Loops, Conditionals, Defensive Input Handling)
-# Developer: Mohamed Nabel
+# Developer: Mohamed Nabil
 # ==============================================================================
 def login():
     attempts = 0
