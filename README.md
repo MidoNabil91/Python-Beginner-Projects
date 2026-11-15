@@ -74,13 +74,14 @@ A feature-rich inventory control application built with pure functions, menu-dri
 * **Supply Chain KPIs:** Dynamically calculates Warehouse Occupancy Rate (`%`) and tracks cumulative Movement Metrics (`+Added` / `-Removed`).
 * **Audit Trail:** Features a continuous string-based session history log to audit all transactions within an active session.
 
-### 7. Supplier List Manager 📦 (supplier_list_manager.py) / (`supplier_list_manager_v2.py`) — v2.0
+### 7. Supplier List Manager 📦 (supplier_list_manager.py) / (`supplier_list_manager_v2.py`) — v2.0 / `supplier_list_manager_v3.py` (v3.0)
 
 An interactive CLI procurement tool upgraded to a dictionary-based architecture to maintain and manage an active directory of approved suppliers:
 * **User Authentication Gate:** Secured with a login system (`login()`) enforcing a 3-attempt lockout limit before granting system access.
 * **Dictionary-Based CRUD Management:** Stores supplier records with nested attributes (`category` and `status`), supporting adding, viewing, updating status, and deleting suppliers.
 * **Partial-Match Smart Search:** Allows searching suppliers using partial keywords rather than exact full-name matches.
 * **Duplicate Prevention & Validation:** Protects against duplicate entries and empty inputs with defensive exception handling (`try...except ValueError`).
+* ** Full architectural refactoring into modular, single-responsibility functions (`main`, `show_menu`, `get_choice`, `add_supplier`, `view_suppliers`, `search_supplier`, `update_supplier`, `delete_supplier`) with comprehensive docstrings and `enumerate` formatting[cite: 3].
 ---
 
 ## 🧠 Concepts Practiced
