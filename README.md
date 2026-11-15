@@ -81,7 +81,7 @@ An interactive CLI procurement tool upgraded to a dictionary-based architecture 
 * **Dictionary-Based CRUD Management:** Stores supplier records with nested attributes (`category` and `status`), supporting adding, viewing, updating status, and deleting suppliers.
 * **Partial-Match Smart Search:** Allows searching suppliers using partial keywords rather than exact full-name matches.
 * **Duplicate Prevention & Validation:** Protects against duplicate entries and empty inputs with defensive exception handling (`try...except ValueError`).
-* ** Full architectural refactoring into modular, single-responsibility functions (`main`, `show_menu`, `get_choice`, `add_supplier`, `view_suppliers`, `search_supplier`, `update_supplier`, `delete_supplier`) with comprehensive docstrings and `enumerate` formatting[cite: 3].
+* ** Full architectural refactoring into modular, single-responsibility functions (`main`, `show_menu`, `get_choice`, `add_supplier`, `view_suppliers`, `search_supplier`, `update_supplier`, `delete_supplier`) with comprehensive docstrings and `enumerate` formatting.
 ---
 
 ## 🧠 Concepts Practiced
