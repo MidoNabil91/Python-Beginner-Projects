@@ -9,13 +9,14 @@ This repository focuses on practical problem-solving, real-world supply chain sc
 ## 🛠️ Projects & Exercises
 
 ### 0. Debugging & Code Review Exercises
+
 A dedicated series of debugging challenges focused on inspecting buggy code, identifying logic errors, analyzing scope behaviors, and refactoring for production-ready efficiency.
 
-* **Set 1 (`debugging_exercises_01.py` & `debugging_exercises_02.py`):** 
+* **Set 1 (`debugging_exercises_01.py` & `debugging_exercises_02.py`):
   * Practical debugging challenges covering loop counters, infinite loop prevention, `while-else` control flows, `if-elif` conditional hierarchy order, scope initialization (`NameError`), arithmetic operator precedence, and missing `return` statements (`TypeError`).
-* **Set 2 (`debugging_exercises_03.py`):** 
+* **Set 2 (`debugging_exercises_03.py`):
   * 5 advanced functional challenges inspired by procurement & inventory logic—covering boundary conditions (`<=` vs `<`), pure functions vs scope modification, strict boolean evaluation (`and` vs `or`), default parameter ordering (`SyntaxError`), and defensive checks against division by zero (`ZeroDivisionError`).
-* **Set 3 (`debugging_exercises_04.py`):** 
+* **Set 3 (`debugging_exercises_04.py`):
   * Practical debugging & refactoring challenges covering logical operator selection (`and` vs `or`), variable scope/naming typos (`NameError`), defensive validation against `ZeroDivisionError`, and standard return-value modular structures.
 * Set 4 (dictionaries_supply_chain_training.py):
 Practical dictionary exercises covering CRUD operations, nested dictionaries, data filtering, aggregation logic, inventory management, fleet tracking, supplier evaluation, and procurement-focused business scenarios.
@@ -25,7 +26,9 @@ A collection of 10 practical debugging exercises focused on identifying and fixi
 Focused on business logic, RFQ evaluation, inventory management, fleet tracking, and supplier assessment using Python.
 
 ### 1. Interactive Countdown Timer
+
 A simple countdown timer that:
+
 * Takes a number from the user
 * Counts down to zero
 * Displays a completion message
@@ -33,14 +36,18 @@ A simple countdown timer that:
 * Exits when requested
 
 ### 2. Interactive Multiplication Table Generator
+
 A multiplication table generator that:
+
 * Creates multiplication tables from 1 to 10
 * Accepts multiple numbers without restarting the program
 * Uses loops and user input
 * Allows the user to exit by entering 0
 
 ### 3. Number Guessing Game
+
 A simple guessing game that:
+
 * Generates a random number between 1 and 100
 * Gives hints when the guess is too high or too low
 * Tracks the number of attempts
@@ -49,7 +56,9 @@ A simple guessing game that:
 * Displays a Game Over message when attempts run out
 
 ### 4. Simple & Continuous Calculator
+
 A calculator project that:
+
 * Supports addition (`+`), subtraction (`-`), multiplication (`*`), division (`/`), modulus (`%`), and exponentiation (`**`)
 * Built using Python pure functions and return statements
 * Safely handles division by zero exceptions
@@ -57,7 +66,9 @@ A calculator project that:
 * Allows the user to start a new calculation or quit
 
 ### 5. Supplier Evaluation System 📦
+
 A practical procurement-focused application that:
+
 * Evaluates supplier performance using weighted scoring (Quality: 40%, Delivery: 30%, Price: 30%)
 * Calculates total weighted average score dynamically
 * Automatically assigns Supplier Status (*Approved*, *Conditional*, *Rejected*)
@@ -67,7 +78,9 @@ A practical procurement-focused application that:
 * Implements continuous evaluation loops to evaluate multiple suppliers
 
 ### 6. Inventory Tracker Mini System 📦 (`inv_tracker_system.py`) — v1.4
+
 A feature-rich inventory control application built with pure functions, menu-driven control flow, and supply chain logic:
+
 * **Stock Transactions:** Supports receiving (`+In`) and issuing (`-Out`) operations with defensive input validation against invalid inputs or negative numbers.
 * **Capacity Control & Reorder Alerts:** Enforces max warehouse capacity limits (`max_capacity = 500`) and issues automated Low Stock Warnings (`stock <= 5`).
 * **Financial Valuation:** Calculates real-time total inventory monetary valuation formatted explicitly in KWD (`:.3f`).
@@ -77,29 +90,31 @@ A feature-rich inventory control application built with pure functions, menu-dri
 ### 7. Supplier List Manager 📦 (supplier_list_manager.py) / (`supplier_list_manager_v2.py`) — v2.0 / `supplier_list_manager_v3.py` (v3.0)
 
 An interactive CLI procurement tool upgraded to a dictionary-based architecture to maintain and manage an active directory of approved suppliers:
+
 * **User Authentication Gate:** Secured with a login system (`login()`) enforcing a 3-attempt lockout limit before granting system access.
 * **Dictionary-Based CRUD Management:** Stores supplier records with nested attributes (`category` and `status`), supporting adding, viewing, updating status, and deleting suppliers.
 * **Partial-Match Smart Search:** Allows searching suppliers using partial keywords rather than exact full-name matches.
 * **Duplicate Prevention & Validation:** Protects against duplicate entries and empty inputs with defensive exception handling (`try...except ValueError`).
 * ** Full architectural refactoring into modular, single-responsibility functions (`main`, `show_menu`, `get_choice`, `add_supplier`, `view_suppliers`, `search_supplier`, `update_supplier`, `delete_supplier`) with comprehensive docstrings and `enumerate` formatting.
 
-### 8. Vendor Evaluation Matrix 📊 (`08_vendor_evaluation_matrix_v2/vendor_evaluation_matrix_v2.py`) — v2.0
+### 8. Vendor Evaluation Matrix 📊 (`08_vendor_evaluation_matrix_v2/vendor_evaluation_matrix_v2.py` & `vendor_evaluation_matrix_v3.py`) — v3.0
 
-A modular procurement decision-support CLI application designed to evaluate and rank competing vendors using a two-stage technical and commercial scoring methodology:
+A modular procurement decision-support CLI application designed to evaluate and rank competing vendors using a two-stage technical and commercial scoring methodology with persistent storage:
 
 * **Two-Stage Evaluation Gate:** Screens vendors first through a mandatory Technical Pass/Fail threshold (`score >= 70` to pass), automatically disqualifying technically non-compliant bids from commercial ranking.
+* **Technical Qualification Engine:** Automatically classifies vendors as *Passed* or *Rejected* based on the mandatory technical threshold (`>= 70`), simulating real RFQ technical evaluation workflows.
 * **Weighted Commercial Scoring:** Calculates overall commercial performance dynamically using procurement weights (**Price: 40%**, **Quality: 35%**, **Delivery: 25%**).
 * **Winner Selection Engine (`find_best_vendor`):** Iterates through qualified vendors and returns a tuple `(best_score, best_vendor)` to generate a formatted Best Vendor Award Report.
-* **Nested Dictionary Storage & Vendor Record Management:** Manages multi-attribute vendor profiles (price, delivery, quality, technical) with support for adding, viewing, evaluating, and deleting records.
-* **Defensive Input & Edge-Case Protection:** Enforces strict `0–100` score boundaries, prevents duplicate vendor entries, handles `ValueError` exceptions, and safely manages empty or unqualified vendor lists.
-* **Technical Qualification Engine:** Vendors are automatically classified as Passed or Rejected based on a mandatory technical threshold (>= 70), simulating real RFQ technical evaluation workflows.
+* **JSON Data Persistence (`v3.0`):** Automatically saves and loads vendor evaluation records using a local `vendors.json` file (`json.load` / `json.dump`) so data persists across sessions.
+* **Defensive Input & Edge-Case Protection:** Enforces strict `0–100` score boundaries, prevents duplicate vendor entries, handles `ValueError` and `FileNotFoundError` exceptions, and safely manages empty or unqualified vendor lists.
 
 ---
 
 ## 🧠 Concepts Practiced
 
 Through these projects, I practiced:
-* Variables & Primitive Data Types
+
+* Variables & Primitive Data Types.
 * Python Lists & Dynamic Sequences (`append()`, `remove()`, `len()`, `zip()`, `enumerate()`)
 * Python Dictionaries, Nested Dictionary Structures & CRUD Operations
 * User Input Handling & String Sanitization (`strip()`, `lower()`, `title()`)
@@ -115,6 +130,8 @@ Through these projects, I practiced:
 * Defensive Exception Handling (`try...except ValueError`) & Zero-Division Risk Prevention
 * Business Rule Implementation, Technical Qualification Logic, & Weighted Vendor Evaluation Models
 * Decision-Making Algorithms
+* File Handling & JSON Data Persistence (`with open()`, `json.load()`, `json.dump()`, `FileNotFoundError` handling)
+
 ---
 
 ## 🎯 Purpose of This Repository
@@ -137,7 +154,7 @@ The objective is not only learning Python syntax but also developing problem-sol
 
 * 🔐 User Authentication & Login System ✅
 * 📊 Vendor Evaluation Matrix ✅
-* 📁 File-Based Supplier Management System (CSV / JSON)
+* 📁 File-Based Supplier Management System (CSV / JSON) ✅
 * 🏗️ Object-Oriented Programming (OOP)
 * 📈 Procurement KPI Dashboard
 * 🐼 Data Analysis with Pandas
@@ -146,11 +163,11 @@ The objective is not only learning Python syntax but also developing problem-sol
 
 ### 📊 Repository Statistics
 
-- 8 Practical Python Projects
-- 6 Debugging Exercise Sets
-- Supply Chain & Procurement-Focused Scenarios
-- Progressive Refactoring & Code Review Practice
-- Dictionary-Based Business Applications
+* 📊 8 Practical Python Projects.
+* 📊 6 Debugging Exercise Sets.
+* 📊 Supply Chain & Procurement-Focused Scenarios.
+* 📊 Progressive Refactoring & Code Review Practice.
+* 📊 Dictionary-Based & JSON-Persistent Business Applications.
 
 ---
 
