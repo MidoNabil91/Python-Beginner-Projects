@@ -84,32 +84,37 @@ An interactive CLI procurement tool upgraded to a dictionary-based architecture 
 * ** Full architectural refactoring into modular, single-responsibility functions (`main`, `show_menu`, `get_choice`, `add_supplier`, `view_suppliers`, `search_supplier`, `update_supplier`, `delete_supplier`) with comprehensive docstrings and `enumerate` formatting.
 
 ### 8. Vendor Evaluation Matrix 📊 (`08_vendor_evaluation_matrix_v2/vendor_evaluation_matrix_v2.py`) — v2.0
+
 A modular procurement decision-support CLI application designed to evaluate and rank competing vendors using a two-stage technical and commercial scoring methodology:
+
 * **Two-Stage Evaluation Gate:** Screens vendors first through a mandatory Technical Pass/Fail threshold (`score >= 70` to pass), automatically disqualifying technically non-compliant bids from commercial ranking.
 * **Weighted Commercial Scoring:** Calculates overall commercial performance dynamically using procurement weights (**Price: 40%**, **Quality: 35%**, **Delivery: 25%**).
 * **Winner Selection Engine (`find_best_vendor`):** Iterates through qualified vendors and returns a tuple `(best_score, best_vendor)` to generate a formatted Best Vendor Award Report.
-* **Nested Dictionary Storage & Full CRUD:** Manages multi-attribute vendor profiles (`price`, `delivery`, `quality`, `technical`) with support for adding, viewing, evaluating, and deleting records.
+* **Nested Dictionary Storage & Vendor Record Management:** Manages multi-attribute vendor profiles (price, delivery, quality, technical) with support for adding, viewing, evaluating, and deleting records.
 * **Defensive Input & Edge-Case Protection:** Enforces strict `0–100` score boundaries, prevents duplicate vendor entries, handles `ValueError` exceptions, and safely manages empty or unqualified vendor lists.
+* **Technical Qualification Engine:** Vendors are automatically classified as Passed or Rejected based on a mandatory technical threshold (>= 70), simulating real RFQ technical evaluation workflows.
 
 ---
 
 ## 🧠 Concepts Practiced
 
-Through these projects I practiced:
-- Variables & Primitive Data Types
-- Python Lists & Dynamic Sequences (append(), remove(), len(), zip(), enumerate())
-- User Input Handling & String Sanitization (strip(), lower(), title())
-- Print Formatting, Decimal Precision Formatting (:.3f, :.2f), & F-strings
-- Modular Code Architecture with Pure Functions & return Statements
-- Weighted Average & Mathematical Calculation Logic
-- Dynamic KPI Calculations (Warehouse Occupancy Rate %, Valuation Reports)
-- Random Module & Logic Control
-- Control Flow (if / elif / else) & Logical Operators (and, or, not)
-- Iteration Controls (while Loops, for Loops, break, continue)
-- Defensive Programming, Stock Boundary Validation, & Duplicate Prevention
-- Audit Log Trail Management using String Accumulation (+=)
-- Defensive Exception Handling (try...except ValueError) & Zero-Division Risk Prevention.
-
+Through these projects, I practiced:
+* Variables & Primitive Data Types
+* Python Lists & Dynamic Sequences (`append()`, `remove()`, `len()`, `zip()`, `enumerate()`)
+* Python Dictionaries, Nested Dictionary Structures & CRUD Operations
+* User Input Handling & String Sanitization (`strip()`, `lower()`, `title()`)
+* Print Formatting, Decimal Precision Formatting (`:.3f`, `:.2f`), & F-strings
+* Modular Code Architecture with Pure Functions & `return` Statements
+* Weighted Average & Mathematical Calculation Logic
+* Dynamic KPI Calculations (Warehouse Occupancy Rate %, Valuation Reports)
+* Random Module & Logic Control
+* Control Flow (`if` / `elif` / `else`) & Logical Operators (`and`, `or`, `not`)
+* Iteration Controls (`while` Loops, `for` Loops, `break`, `continue`)
+* Defensive Programming, Stock Boundary Validation, & Duplicate Prevention
+* Audit Log Trail Management using String Accumulation (`+=`)
+* Defensive Exception Handling (`try...except ValueError`) & Zero-Division Risk Prevention
+* Business Rule Implementation, Technical Qualification Logic, & Weighted Vendor Evaluation Models
+* Decision-Making Algorithms
 ---
 
 ## 🎯 Purpose of This Repository
@@ -118,11 +123,34 @@ I am currently learning Python step by step. Instead of only studying theory, I 
 
 ---
 
-## 🚀 Future Roadmap
+### 📚 Learning Approach
+
+This repository follows a project-based learning approach.
+
+Each project starts with a simple version and is gradually improved through debugging, refactoring, code reviews, feature enhancements, and real-world business scenarios.
+
+The objective is not only learning Python syntax but also developing problem-solving skills, software design thinking, and supply chain automation concepts.
+
+---
+
+### 🚀 Future Roadmap
 
 * 🔐 User Authentication & Login System ✅
-* 📁 File-Based Supplier Management System (CSV / JSON integration)
-* 📈 Procurement Data Analysis & KPI Dashboard Tools
+* 📊 Vendor Evaluation Matrix ✅
+* 📁 File-Based Supplier Management System (CSV / JSON)
+* 🏗️ Object-Oriented Programming (OOP)
+* 📈 Procurement KPI Dashboard
+* 🐼 Data Analysis with Pandas
+
+---
+
+### 📊 Repository Statistics
+
+- 8 Practical Python Projects
+- 6 Debugging Exercise Sets
+- Supply Chain & Procurement-Focused Scenarios
+- Progressive Refactoring & Code Review Practice
+- Dictionary-Based Business Applications
 
 ---
 
