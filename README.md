@@ -81,7 +81,16 @@ An interactive CLI procurement tool upgraded to a dictionary-based architecture 
 * **Dictionary-Based CRUD Management:** Stores supplier records with nested attributes (`category` and `status`), supporting adding, viewing, updating status, and deleting suppliers.
 * **Partial-Match Smart Search:** Allows searching suppliers using partial keywords rather than exact full-name matches.
 * **Duplicate Prevention & Validation:** Protects against duplicate entries and empty inputs with defensive exception handling (`try...except ValueError`).
-* ** Full architectural refactoring into modular, single-responsibility functions (`main`, `show_menu`, `get_choice`, `add_supplier`, `view_suppliers`, `search_supplier`, `update_supplier`, `delete_supplier`) with comprehensive docstrings and `enumerate` formatting[cite: 3].
+* ** Full architectural refactoring into modular, single-responsibility functions (`main`, `show_menu`, `get_choice`, `add_supplier`, `view_suppliers`, `search_supplier`, `update_supplier`, `delete_supplier`) with comprehensive docstrings and `enumerate` formatting.
+
+### 8. Vendor Evaluation Matrix 📊 (`08_vendor_evaluation_matrix_v2/vendor_evaluation_matrix_v2.py`) — v2.0
+A modular procurement decision-support CLI application designed to evaluate and rank competing vendors using a two-stage technical and commercial scoring methodology:
+* **Two-Stage Evaluation Gate:** Screens vendors first through a mandatory Technical Pass/Fail threshold (`score >= 70` to pass), automatically disqualifying technically non-compliant bids from commercial ranking.
+* **Weighted Commercial Scoring:** Calculates overall commercial performance dynamically using procurement weights (**Price: 40%**, **Quality: 35%**, **Delivery: 25%**).
+* **Winner Selection Engine (`find_best_vendor`):** Iterates through qualified vendors and returns a tuple `(best_score, best_vendor)` to generate a formatted Best Vendor Award Report.
+* **Nested Dictionary Storage & Full CRUD:** Manages multi-attribute vendor profiles (`price`, `delivery`, `quality`, `technical`) with support for adding, viewing, evaluating, and deleting records.
+* **Defensive Input & Edge-Case Protection:** Enforces strict `0–100` score boundaries, prevents duplicate vendor entries, handles `ValueError` exceptions, and safely manages empty or unqualified vendor lists.
+
 ---
 
 ## 🧠 Concepts Practiced
@@ -111,7 +120,7 @@ I am currently learning Python step by step. Instead of only studying theory, I 
 
 ## 🚀 Future Roadmap
 
-* 🔐 User Authentication & Login System
+* 🔐 User Authentication & Login System ✅
 * 📁 File-Based Supplier Management System (CSV / JSON integration)
 * 📈 Procurement Data Analysis & KPI Dashboard Tools
 
