@@ -77,11 +77,11 @@ A practical procurement-focused application that:
 * Formats output into a clean, professional summary report
 * Implements continuous evaluation loops to evaluate multiple suppliers
 
-### 6. Inventory Tracker System 📦 (`inv_tracker_system.py v1.4` & `inv_tracker_system_v4.0.py`) — v4.0
+### 6. Inventory Tracker System 📦 (`inv_tracker_system.py v1.4` & `inv_tracker_system_v2.0.py`) — v2.0
 
 A persistent, dictionary-driven warehouse and procurement inventory control system upgraded from a single-item session tracker (`v1.4`) to a full multi-SKU database architecture:
 
-* **Multi-SKU Nested Dictionary Architecture (`v4.0`):** Manages unlimited materials indexed by unique `material_code`, storing item name, category, current stock, custom `max_capacity`, custom `reorder_point`, and `unit_price` (KWD).
+* **Multi-SKU Nested Dictionary Architecture (`v2.0`):** Manages unlimited materials indexed by unique `material_code`, storing item name, category, current stock, custom `max_capacity`, custom `reorder_point`, and `unit_price` (KWD).
 * **JSON Data Persistence:** Automatically loads and saves all inventory records and movement logs via `inv_tracker.json` (`load_invtracker` / `save_invtracker`), preserving data across sessions with `FileNotFoundError` and `JSONDecodeError` protection.
 * **Stock Movement & Capacity Enforcement:** Supports `OPENING`, `IN` (Receive), and `OUT` (Issue) transactions with strict validation against negative values, out-of-stock issues, and maximum warehouse capacity limits.
 * **Automated Reorder Alert Report:** Dedicated alert engine (`reorder_report`) scans all SKUs and flags items reaching or falling below their custom `reorder_point` (`stock <= reorder_point`).
