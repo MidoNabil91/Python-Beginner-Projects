@@ -120,7 +120,7 @@ def add_material(data): # Main to Add Materials :
     print(f"✅ '{material_code}' added successfully!")
     return True
 
-def receive_stock(data):
+def receive_stock(data): # For in Material ,,
     material_code = input("Enter Material Code: ").strip().upper()
     if material_code not in data["inventory"]:
         print(f"⚠️ '{material_code}' not found in inventory!")
@@ -159,7 +159,7 @@ def receive_stock(data):
     print(f"✅ '{qty}' added successfully!")
     return True
 
-def issue_stock(data):
+def issue_stock(data): # For Out Material
     material_code = input("Enter Material Code: ").strip().upper()
     if material_code not in data["inventory"]:
         print(f"⚠️ '{material_code}' not found in inventory!")
