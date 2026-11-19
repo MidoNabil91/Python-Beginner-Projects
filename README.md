@@ -77,15 +77,16 @@ A practical procurement-focused application that:
 * Formats output into a clean, professional summary report
 * Implements continuous evaluation loops to evaluate multiple suppliers
 
-### 6. Inventory Tracker Mini System 📦 (`inv_tracker_system.py`) — v1.4
+### 6. Inventory Tracker System 📦 (`inv_tracker_system.py v1.4` & `inv_tracker_system_v4.0.py`) — v4.0
 
-A feature-rich inventory control application built with pure functions, menu-driven control flow, and supply chain logic:
+A persistent, dictionary-driven warehouse and procurement inventory control system upgraded from a single-item session tracker (`v1.4`) to a full multi-SKU database architecture:
 
-* **Stock Transactions:** Supports receiving (`+In`) and issuing (`-Out`) operations with defensive input validation against invalid inputs or negative numbers.
-* **Capacity Control & Reorder Alerts:** Enforces max warehouse capacity limits (`max_capacity = 500`) and issues automated Low Stock Warnings (`stock <= 5`).
-* **Financial Valuation:** Calculates real-time total inventory monetary valuation formatted explicitly in KWD (`:.3f`).
-* **Supply Chain KPIs:** Dynamically calculates Warehouse Occupancy Rate (`%`) and tracks cumulative Movement Metrics (`+Added` / `-Removed`).
-* **Audit Trail:** Features a continuous string-based session history log to audit all transactions within an active session.
+* **Multi-SKU Nested Dictionary Architecture (`v4.0`):** Manages unlimited materials indexed by unique `material_code`, storing item name, category, current stock, custom `max_capacity`, custom `reorder_point`, and `unit_price` (KWD).
+* **JSON Data Persistence:** Automatically loads and saves all inventory records and movement logs via `inv_tracker.json` (`load_invtracker` / `save_invtracker`), preserving data across sessions with `FileNotFoundError` and `JSONDecodeError` protection.
+* **Stock Movement & Capacity Enforcement:** Supports `OPENING`, `IN` (Receive), and `OUT` (Issue) transactions with strict validation against negative values, out-of-stock issues, and maximum warehouse capacity limits.
+* **Automated Reorder Alert Report:** Dedicated alert engine (`reorder_report`) scans all SKUs and flags items reaching or falling below their custom `reorder_point` (`stock <= reorder_point`).
+* **Financial Valuation & Occupancy KPIs:** Generates a full warehouse valuation report (`view_inventory`) calculating per-item value, occupancy rate (`%`), and total warehouse valuation in KWD (`:.3f`).
+* **Timestamped Audit Trail (Bin Card):** Logs every inventory movement with `datetime` timestamps (`YYYY-MM-DD HH:MM`), transaction type, quantity, and running balance (`view_transactions`).
 
 ### 7. Supplier List Manager 📦 (supplier_list_manager.py) / (`supplier_list_manager_v2.py`) — v2.0 / `supplier_list_manager_v3.py` (v3.0)
 
@@ -131,6 +132,7 @@ Through these projects, I practiced:
 * Business Rule Implementation, Technical Qualification Logic, & Weighted Vendor Evaluation Models
 * Decision-Making Algorithms
 * File Handling & JSON Data Persistence (`with open()`, `json.load()`, `json.dump()`, `FileNotFoundError` handling)
+* Timestamped Audit Trails & Date Formatting (`datetime.now().strftime()`)
 
 ---
 
