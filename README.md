@@ -182,4 +182,5 @@ The objective is not only learning Python syntax but also developing problem-sol
 [![GitHub](https://img.shields.io/badge/GitHub-MidoNabil91-181717?style=flat&logo=github)](https://github.com/MidoNabil91)
 
 ---
-*Learning Python one step at a time 🚀*
+
+Learning Python one step at a time 🚀
