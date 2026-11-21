@@ -20,7 +20,16 @@ A dedicated series of debugging challenges focused on inspecting buggy code, ide
 * Set 6 (dictionary_business_scenarios.py): Focused on business logic, RFQ evaluation, inventory management, fleet tracking, and supplier assessment using Python
 * Set 7 (debugging_exercises_06_pos_and_inventory.py): 12 real-world debugging challenges focused on POS billing math, dictionary lookups, stock guards, exception handling, and JSON data initialization
 
-### 1. Interactive Countdown Timer
+### 1. Interactive Multiplication Table Generator
+
+A multiplication table generator that:
+
+* Creates multiplication tables from 1 to 10
+* Accepts multiple numbers without restarting the program
+* Uses loops and user input
+* Allows the user to exit by entering 0
+
+### 2. Interactive Countdown Timer
 
 A simple countdown timer that:
 
@@ -29,15 +38,6 @@ A simple countdown timer that:
 * Displays a completion message
 * Allows the user to start another countdown
 * Exits when requested
-
-### 2. Interactive Multiplication Table Generator
-
-A multiplication table generator that:
-
-* Creates multiplication tables from 1 to 10
-* Accepts multiple numbers without restarting the program
-* Uses loops and user input
-* Allows the user to exit by entering 0
 
 ### 3. Number Guessing Game
 
@@ -72,7 +72,9 @@ A practical procurement-focused application that:
 * Formats output into a clean, professional summary report
 * Implements continuous evaluation loops to evaluate multiple suppliers
 
-### 6. Inventory Tracker System 📦 (`inv_tracker_system.py v1.4` & `inv_tracker_system_v2.0.py`) — v2.0
+### 6. Inventory Tracker System 📦
+
+(inv_tracker_system.py v1.4 & inv_tracker_system_v2.0.py) — v2.0
 
 A persistent, dictionary-driven warehouse and procurement inventory control system upgraded from a single-item session tracker (`v1.4`) to a full multi-SKU database architecture:
 
@@ -83,7 +85,9 @@ A persistent, dictionary-driven warehouse and procurement inventory control syst
 * **Financial Valuation & Occupancy KPIs:** Generates a full warehouse valuation report (`view_inventory`) calculating per-item value, occupancy rate (`%`), and total warehouse valuation in KWD (`:.3f`).
 * **Timestamped Audit Trail (Bin Card):** Logs every inventory movement with `datetime` timestamps (`YYYY-MM-DD HH:MM`), transaction type, quantity, and running balance (`view_transactions`).
 
-### 7. Supplier List Manager 📦 (supplier_list_manager.py) / (`supplier_list_manager_v2.py`) — v2.0 / `supplier_list_manager_v3.py` (v3.0)
+### 7. Supplier List Manager 📦
+
+(supplier_list_manager.py) / (supplier_list_manager_v2.py) — v2.0 / (supplier_list_manager_v3.py) (v3.0)
 
 An interactive CLI procurement tool upgraded to a dictionary-based architecture to maintain and manage an active directory of approved suppliers:
 
@@ -93,7 +97,9 @@ An interactive CLI procurement tool upgraded to a dictionary-based architecture 
 * **Duplicate Prevention & Validation:** Protects against duplicate entries and empty inputs with defensive exception handling (`try...except ValueError`).
 * ** Full architectural refactoring into modular, single-responsibility functions (`main`, `show_menu`, `get_choice`, `add_supplier`, `view_suppliers`, `search_supplier`, `update_supplier`, `delete_supplier`) with comprehensive docstrings and `enumerate` formatting.
 
-### 8. Vendor Evaluation Matrix 📊 (`08_vendor_evaluation_matrix_v2/vendor_evaluation_matrix_v2.py` & `vendor_evaluation_matrix_v3.py`) — v3.0
+### 8. Vendor Evaluation Matrix 📊
+
+(vendor_evaluation_matrix_v2.py & vendor_evaluation_matrix_v3.py) — v3.0
 
 A modular procurement decision-support CLI application designed to evaluate and rank competing vendors using a two-stage technical and commercial scoring methodology with persistent storage:
 
