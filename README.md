@@ -23,7 +23,8 @@ Practical dictionary exercises covering CRUD operations, nested dictionaries, da
 * Set 5 ( debugging_Supply Chain & Procurement Practice.py )
 A collection of 10 practical debugging exercises focused on identifying and fixing syntax, runtime (`KeyError`, `ValueError`, `AttributeError`), and logical bugs in supply chain and procurement scripts.
 * Set 6 (dictionary_business_scenarios.py)
-Focused on business logic, RFQ evaluation, inventory management, fleet tracking, and supplier assessment using Python.
+Focused on business logic, RFQ evaluation, inventory management, fleet tracking, and supplier assessment using Python
+* (debugging_exercises_06_pos_and_inventory.py): 12 real-world debugging challenges focused on POS billing math, dictionary lookups, stock guards, exception handling, and JSON data initialization
 
 ### 1. Interactive Countdown Timer
 
