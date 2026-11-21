@@ -23,12 +23,14 @@ A dedicated series of debugging challenges focused on inspecting buggy code, ide
 
 ### 1. Interactive Multiplication Table Generator
 
-A multiplication table generator that:
+(multiplication-table-python.py & multiplication_table_v2.py) — v2.0
 
-* Creates multiplication tables from 1 to 10
-* Accepts multiple numbers without restarting the program
-* Uses loops and user input
-* Allows the user to exit by entering 0
+An interactive multiplication trainer refactored from a basic loop script into a modular, dual-mode CLI application:
+
+* **Learn Mode (`generate_table`):** Generates clean multiplication tables for any number with customizable upper limits (e.g., 1 to 10 or 1 to 12)
+* **Interactive Quiz Mode (`start_quiz`):** Tests the user with randomized multiplication questions (`random.randint`), tracks the final score, and lists mistakes for review
+* **Modular Architecture:** Refactored into single-responsibility functions (`get_valid_int`, `generate_table`, `start_quiz`, `main_lines`, `main`) with a `while True` menu loop
+* **Defensive Input Validation:** Protects all numeric prompts against invalid text inputs using `try...except ValueError` handling
 
 ### 2. Interactive Countdown Timer
 
