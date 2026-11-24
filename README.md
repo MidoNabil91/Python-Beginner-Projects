@@ -20,6 +20,7 @@ A dedicated series of debugging challenges focused on inspecting buggy code, ide
 * Set 6 (debugging_Supply Chain & Procurement Practice.py): A collection of 10 practical debugging exercises focused on identifying and fixing syntax, runtime (`KeyError`, `ValueError`, `AttributeError`), and logical bugs in supply chain and procurement scripts
 * Set 7 (dictionary_business_scenarios.py): Focused on business logic, RFQ evaluation, inventory management, fleet tracking, and supplier assessment using Python
 * Set 8 (debugging_exercises_06_pos_and_inventory.py): 12 real-world debugging challenges focused on POS billing math, dictionary lookups, stock guards, exception handling, and JSON data initialization
+* Set 9 (debugging_exercises_07.py): 10 practical business logic scenarios covering tiered discount thresholds, inventory stock updates, cart accumulation, string normalization, zero-division guards, safe dictionary `.get()` lookups, list comprehension filtering, tax precedence, mutable default argument fixes, and Kuwaiti phone validation
 
 ### 1. Interactive Multiplication Table Generator
 
@@ -55,14 +56,13 @@ A simple guessing game that:
 
 ### 4. Simple & Continuous Calculator
 
-(simple_continuous_calculator.py & simple_continuous_calculator_v2.0.py) — v2.0
+(simple_continuous_calculator.py, simple_continuous_calculator_v2.0.py, & simple_continuous_calculator_v3.0.py) — v3.0 (OOP)
 
-A modular CLI calculator refactored with dictionary dispatch and session tracking:
+A CLI calculator showcasing progressive software architecture across three iterations:
 
-* **Dictionary-Mapped Operations (`OPERATIONS`):** Replaces long `if/elif` chains by mapping operator symbols (`+`, `-`, `*`, `/`, `%`, `**`) directly to arithmetic functions
-* **Continuous Chained Calculations:** Allows carrying forward the previous result (`y`), starting fresh (`n`), or viewing session history (`h`)
-* **Session Calculation History (`show_history`):** Logs all completed operations in the current session and displays a numbered summary before exit
-* **Defensive Validation:** Protects numeric inputs (`get_valid_float`), operator selection (`get_valid_operation`), and division/modulo by zero
+**v1.0 (Procedural):** Core arithmetic functions with continuous calculation loops and basic zero-division checks
+**v2.0 (Modular & Dictionary Dispatch):** Refactored with `OPERATIONS` dictionary mapping, session calculation history (`show_history`), and defensive input validation (`get_valid_float`, `get_valid_operation`)
+**v3.0 (Object-Oriented):** Encapsulates state (`self.history`, `self.operations`) and all calculation logic inside a clean, reusable `Calculator` class
 
 ### 5. Supplier Evaluation System 📦
 
@@ -139,6 +139,7 @@ Through these projects, I practiced:
 * File Handling & JSON Data Persistence (`with open()`, `json.load()`, `json.dump()`, `FileNotFoundError` handling)
 * Timestamped Audit Trails & Date Formatting (`datetime.now().strftime()`)
 * User Input Handling, String Sanitization & ID Padding (`strip()`, `lower()`, `title()`, `zfill()`)
+* Object-Oriented Programming (OOP) Fundamentals (`class`, `__init__`, `self`, instance state & methods) & Dictionary Dispatch Patterns
 
 ---
 
@@ -163,7 +164,7 @@ The objective is not only learning Python syntax but also developing problem-sol
 * 🔐 User Authentication & Login System ✅
 * 📊 Vendor Evaluation Matrix ✅
 * 📁 File-Based Supplier Management System (CSV / JSON) ✅
-* 🏗️ Object-Oriented Programming (OOP)
+* 🏗️ Object-Oriented Programming (OOP) ✅
 * 📈 Procurement KPI Dashboard
 * 🐼 Data Analysis with Pandas
 
@@ -172,7 +173,7 @@ The objective is not only learning Python syntax but also developing problem-sol
 ### 📊 Repository Statistics
 
 * 📊 8 Practical Python Projects.
-* 📊 8 Debugging Exercise Sets.
+* 📊 9 Debugging Exercise Sets.
 * 📊 Supply Chain & Procurement-Focused Scenarios.
 * 📊 Progressive Refactoring & Code Review Practice.
 * 📊 Dictionary-Based & JSON-Persistent Business Applications.
