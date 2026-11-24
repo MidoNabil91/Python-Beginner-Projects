@@ -55,13 +55,14 @@ A simple guessing game that:
 
 ### 4. Simple & Continuous Calculator
 
-A calculator project that:
+(simple_continuous_calculator.py & simple_continuous_calculator_v2.0.py) — v2.0
 
-* Supports addition (`+`), subtraction (`-`), multiplication (`*`), division (`/`), modulus (`%`), and exponentiation (`**`)
-* Built using Python pure functions and return statements
-* Safely handles division by zero exceptions
-* Allows continuous calculations using previous results
-* Allows the user to start a new calculation or quit
+A modular CLI calculator refactored with dictionary dispatch and session tracking:
+
+* **Dictionary-Mapped Operations (`OPERATIONS`):** Replaces long `if/elif` chains by mapping operator symbols (`+`, `-`, `*`, `/`, `%`, `**`) directly to arithmetic functions
+* **Continuous Chained Calculations:** Allows carrying forward the previous result (`y`), starting fresh (`n`), or viewing session history (`h`)
+* **Session Calculation History (`show_history`):** Logs all completed operations in the current session and displays a numbered summary before exit
+* **Defensive Validation:** Protects numeric inputs (`get_valid_float`), operator selection (`get_valid_operation`), and division/modulo by zero
 
 ### 5. Supplier Evaluation System 📦
 
