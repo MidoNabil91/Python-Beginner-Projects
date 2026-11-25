@@ -78,7 +78,7 @@ A practical procurement-focused application that:
 
 ### 6. Inventory Tracker System 📦
 
-(inv_tracker_system.py v1.4 & inv_tracker_system_v2.0.py) — v2.0
+(`inv_tracker_system.py` v1.4, `inv_tracker_system_v2.0.py`, & `inv_tracker_system_v3.0.py`) — v3.0 (OOP)
 
 A persistent, dictionary-driven warehouse and procurement inventory control system upgraded from a single-item session tracker (`v1.4`) to a full multi-SKU database architecture:
 
@@ -88,6 +88,7 @@ A persistent, dictionary-driven warehouse and procurement inventory control syst
 * **Automated Reorder Alert Report:** Dedicated alert engine (`reorder_report`) scans all SKUs and flags items reaching or falling below their custom `reorder_point` (`stock <= reorder_point`).
 * **Financial Valuation & Occupancy KPIs:** Generates a full warehouse valuation report (`view_inventory`) calculating per-item value, occupancy rate (`%`), and total warehouse valuation in KWD (`:.3f`).
 * **Timestamped Audit Trail (Bin Card):** Logs every inventory movement with `datetime` timestamps (`YYYY-MM-DD HH:MM`), transaction type, quantity, and running balance (`view_transactions`).
+* **Object-Oriented Architecture (`v3.0`):** Encapsulates inventory state (`self.data`), file persistence, stock movements, and reporting methods inside a cohesive `InventoryTracker` class.
 
 ### 7. Supplier List Manager 📦
 
