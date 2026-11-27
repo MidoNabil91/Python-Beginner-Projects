@@ -7,8 +7,8 @@
 
 
 class Calculator:
+    
     def __init__(self):
-
         self.history = []
         self.operations = {
             "+": self.add,
