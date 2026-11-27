@@ -21,6 +21,7 @@ A dedicated series of debugging challenges focused on inspecting buggy code, ide
 * Set 7 (dictionary_business_scenarios.py): Focused on business logic, RFQ evaluation, inventory management, fleet tracking, and supplier assessment using Python
 * Set 8 (debugging_exercises_06_pos_and_inventory.py): 12 real-world debugging challenges focused on POS billing math, dictionary lookups, stock guards, exception handling, and JSON data initialization
 * Set 9 (debugging_exercises_07.py): 10 practical business logic scenarios covering tiered discount thresholds, inventory stock updates, cart accumulation, string normalization, zero-division guards, safe dictionary `.get()` lookups, list comprehension filtering, tax precedence, mutable default argument fixes, and Kuwaiti phone validation
+* Set 10 (debugging_exercises_08.py): 8 Object-Oriented Programming (OOP) debugging challenges covering `self` binding (`TypeError`), instance vs. local attribute initialization (`AttributeError`), internal sibling method calls, `__repr__` object formatting, `return` vs. `print` in methods, shared mutable class dictionary traps, encapsulation price-validation guards, and custom `to_dict()` JSON serialization
 
 ### 1. Interactive Multiplication Table Generator
 
@@ -140,7 +141,7 @@ Through these projects, I practiced:
 * File Handling & JSON Data Persistence (`with open()`, `json.load()`, `json.dump()`, `FileNotFoundError` handling)
 * Timestamped Audit Trails & Date Formatting (`datetime.now().strftime()`)
 * User Input Handling, String Sanitization & ID Padding (`strip()`, `lower()`, `title()`, `zfill()`)
-* Object-Oriented Programming (OOP) Fundamentals (`class`, `__init__`, `self`, instance state & methods) & Dictionary Dispatch Patterns
+* Object-Oriented Programming (OOP) Fundamentals (`class`, `__init__`, `self`, instance vs. class attributes, `__repr__`, encapsulation guards, `to_dict()` JSON serialization) & Dictionary Dispatch Patterns
 
 ---
 
@@ -174,10 +175,10 @@ The objective is not only learning Python syntax but also developing problem-sol
 ### 📊 Repository Statistics
 
 * 📊 8 Practical Python Projects.
-* 📊 9 Debugging Exercise Sets.
+* 📊 10 Debugging Exercise Sets.
 * 📊 Supply Chain & Procurement-Focused Scenarios.
 * 📊 Progressive Refactoring & Code Review Practice.
-* 📊 Dictionary-Based & JSON-Persistent Business Applications.
+* 📊 Dictionary-Based, OOP & JSON-Persistent Business Applications.
 
 ---
 
